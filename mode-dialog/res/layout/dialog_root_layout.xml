@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <!-- 普通提示弹框：文字双按钮和一个图片关闭弹框按钮，关闭按钮可隐藏或者显示dialog布局 -->
+    <include
+        android:id="@+id/commen_hint_dialog"
+        layout="@layout/commen_hint_dialog_layout"
+        android:visibility="gone" />
+
+    <!-- 系统公告弹框：文字双按钮和一个图片关闭弹框按钮，关闭按钮可隐藏或者显示dialog布局 -->
+    <include
+        android:id="@+id/system_whole_dialog"
+        layout="@layout/system_whole_dialog_layout"
+        android:visibility="gone" />
+
+    <!-- 中间可自定义布局的dilog布局 -->
+    <include
+        android:id="@+id/content_custom_dialog"
+        layout="@layout/center_content_custom_dialog_layout"
+        android:visibility="gone" />
+
+    <!-- 升级弹框的dilog布局 -->
+    <include
+        android:id="@+id/version_upgradle_dialog"
+        layout="@layout/version_upgradle_dialog_layout"
+        android:visibility="gone" />
+
+    <!-- 完全自定义布局 -->
+    <include
+        android:id="@+id/total_custom_dialog"
+        layout="@layout/total_custom_dialog_layout"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/download_two_btn_dialog"
+        layout="@layout/download_two_btn_dialog"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/download_no_btn_dialog"
+        layout="@layout/download_no_btn_dialog"
+        android:visibility="gone"/>
+</LinearLayout>

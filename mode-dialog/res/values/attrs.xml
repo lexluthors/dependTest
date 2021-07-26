@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ConstraintHeightScrollView">
+        <attr name="maxHeight" format="dimension"></attr><!-- 最大高度 -->
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressbar">
+        <!--颜色-->
+        <attr name="circle_color" format="color" />
+    </declare-styleable>
+</resources>

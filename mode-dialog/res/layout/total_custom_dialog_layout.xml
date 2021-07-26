@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/info_centent_view_shap"
+        android:orientation="vertical">
+
+        <com.szkingdom.dialog.view.ConstraintHeightScrollView
+            android:id="@+id/dialog_message_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dialog_content_margin_left"
+            android:layout_marginLeft="@dimen/dialog_content_margin_left"
+            android:layout_marginRight="@dimen/dialog_content_margin_left"
+            android:layout_marginTop="@dimen/dialog_content_margin_top"
+            custom:maxHeight="250dp">
+            <LinearLayout
+                android:id="@+id/dialog_message_ll_root"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:orientation="vertical">
+            </LinearLayout>
+        </com.szkingdom.dialog.view.ConstraintHeightScrollView>
+    </LinearLayout>
+
+    <include layout="@layout/dialog_bottom_button_layout" />
+
+</LinearLayout>

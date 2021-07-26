@@ -1,0 +1,3 @@
+rootProject.name = "dependTest"
+include ':app'
+include ':mode-dialog'
